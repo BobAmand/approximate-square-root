@@ -3,14 +3,14 @@
 num = int(input("Enter a positive number: "))
 
 def newtonest(num):
-    return num**0.5
+    return num ** 0.5
 
 def estimate(num):
     guess = num/3
     count = 0
     epsilon = 0.01
     sq_guess = ((num / guess) + guess)/2
-    while (newtonest(num) - sq_guess) > epsilon:
+    while abs(newtonest(num) - sq_guess) > epsilon:
         newguess = sq_guess
         sq_guess = ((num / newguess) + newguess)/2
         count +=1
