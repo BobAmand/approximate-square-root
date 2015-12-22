@@ -15,7 +15,7 @@ def newtonest(num):
 def estimate(num):
     guess = num/3  # initial guess
     count = 0
-    epsilon = 0.01  # minimal difference between estimate and actual.
+    epsilon = 0.00001  # minimal difference between estimate and actual.
     sq_guess = ((num / guess) + guess)/2
     while abs(newtonest(num) - sq_guess) > epsilon:
         newguess = sq_guess
