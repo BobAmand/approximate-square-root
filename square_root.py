@@ -2,8 +2,10 @@
 
 num = int(input("Enter a positive number: "))
 
+
 def newtonest(num):
     return num ** 0.5
+
 
 def estimate(num):
     guess = num/3
@@ -13,7 +15,9 @@ def estimate(num):
     while abs(newtonest(num) - sq_guess) > epsilon:
         newguess = sq_guess
         sq_guess = ((num / newguess) + newguess)/2
-        count +=1
-    print("The square root of {} is {} with {} interations.".format(num,sq_guess,count))
+        count += 1
+    print("The square root of {} is {} with {} interations.".format(num,
+                                                                    sq_guess,
+                                                                    count))
 
 estimate(num)
