@@ -1,4 +1,8 @@
 # approximate-square-root
 A Python estimate using a Newton Approximation
 
-this will be great.
+- Homework 1-Sep-2015
+- example of recursion (function calling itself)
+
+
+bamand
